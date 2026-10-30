@@ -1,0 +1,190 @@
+/* universal selector*/
+/**{
+ color:red;
+ text-align: center;
+}*/
+/* tag selector/element selector*/
+h1{
+    color: green;
+    text-align: center;
+}
+/* attribute selector*/
+a[title="google"]{
+color:blue;
+}
+/* id selector*/
+#idselector{
+    color:green;
+    text-indent: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    word-spacing: 25px;
+    letter-spacing:20px;
+}
+h2{
+    color: red;
+}
+/* class selector*/
+.classselector{
+    color:aqua;
+    font-size: 30px;
+
+}
+/* Descand selector*/
+#desc a{
+    color:green;
+}
+/* /child selector*/
+#child>a{
+    color: red;
+}
+/* pseudo selector*/
+.pseudo:link{
+color:yellow;
+text-decoration: none;
+letter-spacing: 20px;
+}
+.pseudo:hover{
+    color: red;
+}
+.pseudo{
+    color: blueviolet;
+}
+.pseudo:visited{
+    color: aqua;
+}
+/* Target*/
+:target{
+    color: aquamarine;
+    text-transform:uppercase;
+    word-spacing: 20px;
+    line-height: 20px;
+
+}
+#myData{
+    width: 50%;
+    height: 20px;
+    margin:auto;
+}
+input[type="text"]{
+    width: 100%;
+    height: 35px;
+
+}
+input[type="text"]:focus{
+    background-color:black ;
+    letter-spacing: 10px;
+    color: aqua;
+}
+input[type="radio"]:checked+label{
+    color: blue;
+    font-style: italic;
+
+}
+input[type="checkbox"]:enabled+label{
+    color:green;
+}
+input[type="checkbox"]:checked+label{
+    color: red;
+    font-style: italic;
+}
+input[type="checkbox"]:disabled+label{
+    color:gray;
+}
+#fatherName:read-write{
+    background-color: blue;
+    color: black;
+}
+:empty{
+    background-color: blue;
+    height: 30px;
+ }
+ ul li:first-child{
+    background-color: black;
+ }
+ ul li:last-child{
+    background-color: aquamarine;
+ }
+ ul li:nth-child(3){
+    background-color: aquamarine;
+ }
+ /* margin */
+ #marginone{
+    border: 5px  solid springgreen;
+    /* margin: 100px; */
+    /* Top/Right/Buttom/left */
+    /* margin: 100px 40px; */
+    /* T and B/L and R */
+    /* margin:100px 50px 20px; */
+    /* T/LandR/B */
+margin:100px 50px 0 30px;
+ }
+ #margintwo{
+    margin-top: 100px;
+ }
+ .paddingOne{
+    border:  3px solid red;
+    padding: 100px 40px 0px 30px;
+ }
+ .paddingTwo{
+    border: 30px solid blue;
+    padding-bottom: 100px;
+ }
+ /* Border */
+ .borderOne{
+    /* border:50px solid green; */
+    border-left: 30px dashed red;
+ }
+ .borderTwo{
+    border-style: dashed dotted solid;
+    border-color: aquamarine;
+    border-width:30px 50px 100px;
+ }
+ /* Block */
+ .block{
+    border: 2px solid green;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+ }
+ /* Inline */
+ .inline{
+    border: 2px solid black;
+    width: 200px;
+display:block;
+ }
+ /* float */
+ .float-right{
+width: 30%;
+float: right;
+
+ }
+ .clear{
+    clear:both;
+ }
+ .float-left{
+    width: 50%;
+    float: left;
+ }
+ /* Gird */
+ .girdOne div,.girdTwo div,.girdthree{
+padding:20px;
+text-align: center;
+color: #fff;
+ }
+ .girdOne,.girdTwo,.girdthree{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-column-gap: 40px; */
+    /* grid-row-gap:20px; */
+    /* grid-gap:30px; */
+ }
+ .columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+ }
+ .rowadd{
+    grid-column-start: 2;
+    grid-row-start:2 ;
+    grid-row-end: 4;
+ }
