@@ -188,3 +188,65 @@ color: #fff;
     grid-row-start:2 ;
     grid-row-end: 4;
  }
+ /* flex */
+ .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+
+ }
+ .flex div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ /* Position */
+ .parent-relative{
+    border: 2px  solid salmon;
+    width: 1000px;
+    height: 500px;
+ }
+ .relative{
+    border: 2px solid saddlebrown;
+    position: relative;
+    top: 300px;
+ }
+ .parent-absolute{
+    border: 2px  solid blue;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+ }
+ .absolute{
+    border: 2px solid rgb(19, 139, 51);
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 100px;
+    bottom: 200px;
+
+ }
+ .fixed{
+    position: fixed;
+    top: 50px;
+    button:50px;
+ }
+
+.online {
+  font-family: "Tiny5 Duo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "BLED" 0,
+    "JITT" 0,
+    "ROND" 0;
+}
+@font-face{
+    font-family: one;
+    src:url(csslecture/Redaction_70/Redaction70-Italic.ttf)
+}
+.offline{
+    font-family: one;
+}
